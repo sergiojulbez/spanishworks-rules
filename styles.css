@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
+
+
+body {
+	margin: 0;
+	background: #222;
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 800;
+  
+}
+
+.container {
+	width: 80%;
+	margin: 0 auto;
+  
+}
+
+header {
+  background: rgb(102, 145, 53);
+  background: linear-gradient(170deg, rgb(121, 168, 80) 0%, rgb(58, 105, 44) 50%, rgb(35, 143, 128) 100%)
+ 
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.logo {
+  float: left;
+  padding: 10px 0;
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 39px;
+
+  position: relative;
+}
+
+nav a {
+  color: rgb(39, 37, 37);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 25px;
+}
+
+nav a:hover {
+  color: #000;
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: rgb(39, 37, 37);
+
+  position: absolute;
+  top: 0;
+  width: 0%;
+
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+
+
+.container-slider{
+  margin-left: 80px;
+  margin-top: 90px;
+  width: 60%;
+  height: 80%;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  border-top: 30px;
+  box-shadow: 0 10px 30px #000;
+}
+
+ul, li {
+    margin: 0;
+    list-style: none;
+}
+
+ul.slider{
+  position: relative;
+  max-width: 50%;
+  width: 117%;
+  height: 350px;
+ 
+}
+
+ul.slider h1{
+  position: absolute;
+  padding: 10px;
+  left: 20%;
+  top: 83%;
+  transform: translate(-50%, -50%);
+}
+
+ul.slider li {
+    position: absolute;
+    margin-left: auto;
+    top: 10%;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    transition: opacity .5s;
+   
+    
+}
+
+ul.slider li img{
+  width: 150%;
+  height: 345px;
+  object-fit: cover;
+}
+
+ul.slider li:first-child {
+    opacity: 1; /*Mostramos el primer <li>*/
+}
+
+ul.slider li:target {
+    opacity: 1; /*Mostramos el <li> del enlace que pulsemos*/
+}
+
+.menu{
+  text-align: center;
+  margin: 40px;
+}
+
+.menu li{
+  display: inline-block;
+  text-align: center;
+}
+
+.menu li a{
+  display: inline-block;
+  color: rgba(255, 255, 255, 0.342);
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.342);
+  padding: 5px;
+  width: 50px;
+  height: -10px;
+  font-size: 0px;
+  box-shadow: 0 10px 30px #000;
+  margin-bottom: 15px;
+  
+}
+
+.container-sociales {
+  margin: 0px;
+
+}
+
+.social-bar {
+position: fixed;
+top: 50%;
+-webkit-transform: translateY(-50%);
+-ms-transform: translateY(-50%);
+transform: translateY(-50%);
+}
+
+.social-bar a {
+display: block;
+text-align: center;
+padding: 15px;
+transition-duration: 0.5s;
+color: white;
+font-size: 20px;
+width: 20px;
+}
+
+.social-bar a:hover {
+background-color:rgba(0, 128, 128, 0);
+padding: 15px 25px;
+}
+
+.facebook {
+  background: rgb(131,58,180);
+  background: linear-gradient(185deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+color: white;
+border-radius: 50px;
+
+}
+
+.twitter {
+  background: rgb(85,172,238);
+  background: linear-gradient(185deg, rgba(85,172,238,1) 100%, rgba(252,176,69,0) 100%);
+color: white;
+border-radius: 50px;
+}
+
+.youtube {
+  background: rgb(253,29,29);
+  background: linear-gradient(185deg, rgba(253,29,29,1) 100%, rgba(252,176,69,0) 100%);
+color: white;
+border-radius: 50px;
+
+}
+
+
+
+.container-reglas{
+  margin: 150px;
+  margin-top: 100px;
+  width: 80%;
+  height: 80%;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  border-top: 30px;
+  box-shadow: 0 10px 30px #000;
+  padding: 0.1px;
+}
+
+.container-info{
+  margin-left: 80px;
+  margin-top: -40px;
+  width: 60%;
+  height: 80%;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  border-top: 30px;
+  box-shadow: 0 10px 30px #000;
+  padding: 1px;
+
+}
+
+.container-partner{
+  margin: auto;
+  margin-top: 100px;
+  width: fit-content;
+  height: 90px;
+  border-top: 100px;
+  box-shadow: 0 10px 30px #000;
+padding: 0.1px;
+
+}
+
+.container-zapa{
+  margin: auto;
+  width: fit-content;
+}
+
+
+.container-info-donaciones{
+  margin: 150px;
+  margin-top: 100px;
+  width: 80%;
+  height: 80%;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  border-top: 30px;
+  box-shadow: 0 10px 30px #000;
+  padding: 0.1px;
+}
